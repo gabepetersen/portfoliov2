@@ -1,0 +1,17 @@
+{
+  "name": "portfoliov2",
+  "version": "1.0.0",
+  "description": "A second portfolio for the very cool Gabe Petersen",
+  "main": "index.js",
+  "repository": "https://github.com/gabepetersen/portfoliov2.git",
+  "author": "gabepetersen <precariousplant@gmail.com>",
+  "scripts": {
+    "compile": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "gulp": "^4.0.2",
+    "webpack": "^5.42.0"
+  }
+}
