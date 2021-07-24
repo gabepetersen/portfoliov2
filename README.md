@@ -1,9 +1,12 @@
-# Page Header
+# Gabe's New Portfolio
 
 ---
 
-## To Start
+### A site to demonstrate my new dev powers
 
-1. `yarn serve`
-2. Navigate to `http://localhost:8080` and `http://localhost:8080/README/`
-3. Nice
+This site is built with [11ty](https://www.11ty.dev/) in hopes of learning more about static site generation and improving the mess of my previous blog
+
+### To Run
+
+1. `yarn start`
+2. Navigate to `http://localhost:8080`

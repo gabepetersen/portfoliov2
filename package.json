@@ -6,8 +6,8 @@
   "repository": "https://github.com/gabepetersen/portfoliov2.git",
   "author": "gabepetersen <precariousplant@gmail.com>",
   "scripts": {
-    "compile": "npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --serve"
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve --output='./generated'"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
