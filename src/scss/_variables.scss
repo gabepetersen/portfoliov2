@@ -1,0 +1,29 @@
+// -------------------------
+// Colors
+// -------------------------
+
+$color__white: #ffffff;
+
+$color__gray--0: #ececec;
+$color__gray--1: #c0c0c0;
+$color__gray--2: #a1a1a1;
+$color__gray--3: #808080;
+$color__gray--4: #6b6b6b;
+$color__gray--5: #464646;
+
+$color__black--0: #313131;
+$color__black--1: #202020;
+$color__black--2: #131313;
+$color__black--3: #000000;
+
+// -------------------------
+// Typography
+// -------------------------
+
+$heading--primary__color: $color__black--2;
+$heading--secondary__color: $color__gray--1;
+
+$H1__font-size: 4rem;
+$H1__font-weight: 300;
+$H1__font-family: Arial, sans-serif;
+$H1__text-transform: none;

@@ -1,4 +1,6 @@
-* {
-  color: salmon;
-  padding: 10px;
-}
+// abstracts
+@use 'variables';
+
+// base
+@use 'typography';
+@use 'base';
