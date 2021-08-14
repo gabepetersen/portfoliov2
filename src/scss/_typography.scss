@@ -1,3 +1,12 @@
-h1 {
-  
+@use 'variables' as var;
+@use 'sass:map';
+
+// Default heading styles
+@each $label, $map in var.$headings {
+  #{$label} {
+    font-size: map.get($map, 'font-size');
+    font-weight: map.get($map, 'font-weight');
+    font-family: map.get($map, 'font-family');
+    text-transform: map.get($map, '$text-transform');
+  }
 }
