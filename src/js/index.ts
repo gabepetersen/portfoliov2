@@ -9,5 +9,4 @@ import NewComponent from './NewComponent';
   const nc2 = new NewComponent();
   console.log("\n---\nLet's see if it is static\n---\n");
   nc2.incNumber();
-  
 }());
