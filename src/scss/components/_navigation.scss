@@ -1,10 +1,49 @@
+@use 'variables' as var;
+
+$color-yellow: #e2cc51;
+$color-red: #a73c38;
+
 .nav {
   list-style: none;
   display: flex;
   justify-content: center;
 
-
   &__item {
+    margin: 0 1rem;
+    background-image: linear-gradient(56deg, $color-red, $color-yellow);
 
+    &:hover {
+      background-image: none;
+      background-color: transparent;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 1.5rem 2.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    border: 3px solid wheat;
+    overflow: hidden;
+
+    &:link,
+    &:visited,
+    &:active {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &:hover,
+    &:focus {
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      border-color: transparent;
+      background-image: linear-gradient(56deg, $color-red, $color-yellow);
+
+      &::before {
+        content: "";
+        border-width: 50px 50px 0;
+      }
+    }
   }
 }
