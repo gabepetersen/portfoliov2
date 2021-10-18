@@ -3,5 +3,5 @@
 .section__two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: var.$grid-gap--base;
+    grid-gap: var.$column-gap--base;
 }

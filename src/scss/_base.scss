@@ -1,18 +1,32 @@
 @use 'variables' as var;
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 1.8rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1.8rem;
 }
 
 html {
-  font-size: 62.5%; // 1rem = 10px
+    font-size: 62.5%; // 1rem = 10px
 }
 
 body {
-  background-color: var.$color__black--1;
-  color: var.$color__gray--0;
+    background-color: var.$color__black--1;
+    color: var.$color__gray--0;
+}
+
+main {
+    max-width: var.$main-content__max-width;
+    margin: 0 auto;
+}
+
+section {
+    margin: var.$section__margin;
+}
+
+img {
+    width: 100%;
+    height: 100%;
 }

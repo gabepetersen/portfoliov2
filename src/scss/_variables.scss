@@ -63,9 +63,13 @@ $headings: (
 );
 
 // -------------------------
-// Typography
+// Layout
 // -------------------------
 
 $mobile-breakpoint: 768px;
 
-$grid-gap--base: 10px;
+$main-content__max-width: 1280px;
+
+$section__margin: 20px;
+
+$column-gap--base: 20px;
