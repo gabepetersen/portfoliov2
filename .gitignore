@@ -2,5 +2,3 @@ _site
 node_modules
 generated
 yarn-error.log
-.cache
-.DS_Store
