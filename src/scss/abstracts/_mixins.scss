@@ -5,7 +5,7 @@
     background-image: linear-gradient($deg, $color1, $color2);
 }
 
-// Example Usage: @include mobileStyles { (styles here) }
+// Example Usage: @include desktopStyles { (styles here) }
 @mixin desktopStyles($breakpoint: var.$mobile-breakpoint) {
     @media screen and (min-width: $breakpoint) {
         @content;
