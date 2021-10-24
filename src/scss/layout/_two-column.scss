@@ -1,7 +1,8 @@
-@use 'variables' as var;
+@use 'abstracts/variables' as var;
 
 .section__two-column {
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-gap: var.$column-gap--base;
 }

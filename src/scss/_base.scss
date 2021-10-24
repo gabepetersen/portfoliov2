@@ -17,6 +17,10 @@ body {
     color: var.$color__gray--0;
 }
 
+header {
+    text-align: center;
+}
+
 main {
     max-width: var.$main-content__max-width;
     margin: 0 auto;
