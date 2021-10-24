@@ -1,0 +1,13 @@
+@use 'abstracts/variables' as var;
+
+// Example Usage: @include linearGradient(#fff, #000, 145deg);
+@mixin linearGradient($color1, $color2, $deg: var.$linear-gradient__degree--default) {
+    background-image: linear-gradient($deg, $color1, $color2);
+}
+
+// Example Usage: @include desktopStyles { (styles here) }
+@mixin desktopStyles($breakpoint: var.$mobile-breakpoint) {
+    @media screen and (min-width: $breakpoint) {
+        @content;
+    }
+}

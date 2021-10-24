@@ -2,7 +2,10 @@
 // Colors
 // -------------------------
 
-$color__white: #ffffff;
+$color__white: #f0f0f0;
+
+$color__yellow: #e2cc51;
+$color__red: #a73c38;
 
 $color__gray--0: #ececec;
 $color__gray--1: #c0c0c0;
@@ -17,47 +20,78 @@ $color__black--2: #131313;
 $color__black--3: #000000;
 
 // -------------------------
+// Gradients
+// -------------------------
+
+$linear-gradient__degree--default: 130deg;
+
+// -------------------------
 // Typography
 // -------------------------
+
+$font__size--base: 1.8rem;
+$font__size--nav-link: 2.5rem;
+
+$line-height--paragraph: 1.5;
 
 $heading--primary__color: $color__black--2;
 $heading--secondary__color: $color__gray--1;
 
 $headings: (
   h6: (
-    font-size: 1rem,
+    font-size-ratio: 1.4,
     font-weight: 300,
     font-family: 'Arial, sans-serif',
-    text-transform: none
+    text-transform: none,
+    margin: 10px 0
   ),
   h5: (
-    font-size: 1.4rem,
+    font-size-ratio: 1.6,
     font-weight: 300,
     font-family: 'Arial, sans-serif',
-    text-transform: none
+    text-transform: none,
+    margin: 10px 0
   ),
   h4: (
-    font-size: 2rem,
+    font-size-ratio: 1.8,
     font-weight: 300,
     font-family: 'Arial, sans-serif',
-    text-transform: none
+    text-transform: none,
+    margin: 10px 0
   ),
   h3: (
-    font-size: 2.5rem,
+    font-size-ratio: 2.1,
     font-weight: 300,
     font-family: 'Arial, sans-serif',
-    text-transform: none
+    text-transform: none,
+    margin: 15px 0
   ),
   h2: (
-    font-size: 3rem,
+    font-size-ratio: 2.6,
     font-weight: 300,
     font-family: 'Arial, sans-serif',
-    text-transform: none
+    text-transform: none,
+    margin: 20px 0
   ),
   h1: (
-    font-size: 4rem,
+    font-size-ratio: 3.1,
     font-weight: 300,
     font-family: 'Arial, sans-serif',
-    text-transform: none
+    text-transform: none,
+    margin: 25px 0
   )
 );
+
+// -------------------------
+// Layout
+// -------------------------
+
+$mobile-breakpoint: 768px;
+
+$main-content__max-width: 1280px;
+
+$section__margin: 30px 20px;
+
+$column-gap--base: 30px;
+
+$portfolio-picture__border-radius: 100px;

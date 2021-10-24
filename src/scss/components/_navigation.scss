@@ -1,10 +1,41 @@
+@use 'abstracts/variables' as var;
+@use 'abstracts/mixins' as mixins;
+
 .nav {
-  list-style: none;
-  display: flex;
-  justify-content: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    @include mixins.linearGradient(var.$color__yellow, var.$color__red);
+    background-clip: text;
+    -webkit-background-clip: text;
 
+    &__item {
+        margin: 0 2rem;
+    }
 
-  &__item {
+    &__link {
+        display: inline-block;
+        padding: 1.5rem 1rem;
+        font-size: var.$font__size--nav-link;
+        font-weight: 400;
+        overflow: hidden;
+        background-image: linear-gradient(180deg, transparent 85%, var.$color__white 85%, transparent 91%);
+        border-radius: 20px;
 
-  }
+        &:link,
+        &:visited,
+        &:active {
+            text-decoration: none;
+            color: transparent;
+        }
+
+        &:hover,
+        &:focus {
+            font-weight: 500;
+            background-clip: text;
+            -webkit-background-clip: text;
+            border-color: transparent;
+            @include mixins.linearGradient(var.$color__yellow, var.$color__red, 180deg);
+        }
+    }
 }
