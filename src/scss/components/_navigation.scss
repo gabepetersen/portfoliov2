@@ -2,46 +2,40 @@
 @use 'abstracts/mixins' as mixins;
 
 .nav {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-
-  &__item {
-    margin: 0 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
     @include mixins.linearGradient(var.$color__yellow, var.$color__red);
+    background-clip: text;
+    -webkit-background-clip: text;
 
-    &:hover {
-      background-image: none;
-      background-color: transparent;
-    }
-  }
-
-  &__link {
-    display: inline-block;
-    padding: 1.5rem 2.5rem;
-    font-size: 2rem;
-    font-weight: 500;
-    border: 3px solid wheat;
-    overflow: hidden;
-
-    &:link,
-    &:visited,
-    &:active {
-      text-decoration: none;
-      color: inherit;
+    &__item {
+        margin: 0 2rem;
     }
 
-    &:hover,
-    &:focus {
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      border-color: transparent;
-      @include mixins.linearGradient(var.$color__yellow, var.$color__red);
+    &__link {
+        display: inline-block;
+        padding: 1.5rem 1rem;
+        font-size: var.$font__size--nav-link;
+        font-weight: 400;
+        overflow: hidden;
+        background-image: linear-gradient(180deg, transparent 85%, var.$color__white 85%, transparent 91%);
+        border-radius: 20px;
 
-      &::before {
-        content: "";
-        border-width: 50px 50px 0;
-      }
+        &:link,
+        &:visited,
+        &:active {
+            text-decoration: none;
+            color: transparent;
+        }
+
+        &:hover,
+        &:focus {
+            font-weight: 500;
+            background-clip: text;
+            -webkit-background-clip: text;
+            border-color: transparent;
+            @include mixins.linearGradient(var.$color__yellow, var.$color__red, 180deg);
+        }
     }
-  }
 }

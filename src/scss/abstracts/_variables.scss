@@ -2,7 +2,7 @@
 // Colors
 // -------------------------
 
-$color__white: #ffffff;
+$color__white: #f0f0f0;
 
 $color__yellow: #e2cc51;
 $color__red: #a73c38;
@@ -30,8 +30,9 @@ $linear-gradient__degree--default: 130deg;
 // -------------------------
 
 $font__size--base: 1.8rem;
-// $font__size--base * $font__header-ratio-multiplier = h6 and so on
-$font__header-ratio-multiplier: 1.4;
+$font__size--nav-link: 2.5rem;
+
+$line-height--paragraph: 1.5;
 
 $heading--primary__color: $color__black--2;
 $heading--secondary__color: $color__gray--1;

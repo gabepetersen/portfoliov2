@@ -30,6 +30,10 @@ section {
     margin: var.$section__margin;
 }
 
+p {
+    line-height: var.$line-height--paragraph;
+}
+
 img {
     width: 100%;
     height: auto;

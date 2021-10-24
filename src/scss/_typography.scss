@@ -1,12 +1,13 @@
 @use 'abstracts/variables' as var;
 @use 'abstracts/mixins' as mixins;
 @use 'sass:map';
+@use 'sass:math';
 
 // Default heading styles
 @each $label, $map in var.$headings {
   #{$label} {
     // Multiply desktop font size by 2/3rds lol
-    font-size: var.$font__size--base * map.get($map, 'font-size-ratio') * (2/3);
+    font-size: var.$font__size--base * map.get($map, 'font-size-ratio') * math.div(2, 3);
     font-weight: map.get($map, 'font-weight');
     font-family: map.get($map, 'font-family');
     text-transform: map.get($map, 'text-transform');
