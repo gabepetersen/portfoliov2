@@ -1,7 +1,5 @@
-@use 'variables' as var;
-
-$color-yellow: #e2cc51;
-$color-red: #a73c38;
+@use 'abstracts/variables' as var;
+@use 'abstracts/mixins' as mixins;
 
 .nav {
   list-style: none;
@@ -10,7 +8,7 @@ $color-red: #a73c38;
 
   &__item {
     margin: 0 1rem;
-    background-image: linear-gradient(56deg, $color-red, $color-yellow);
+    @include mixins.linearGradient(var.$color__yellow, var.$color__red);
 
     &:hover {
       background-image: none;
@@ -38,7 +36,7 @@ $color-red: #a73c38;
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
       border-color: transparent;
-      background-image: linear-gradient(56deg, $color-red, $color-yellow);
+      @include mixins.linearGradient(var.$color__yellow, var.$color__red);
 
       &::before {
         content: "";

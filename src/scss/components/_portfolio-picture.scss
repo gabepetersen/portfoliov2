@@ -1,0 +1,15 @@
+@use 'abstracts/variables' as var;
+@use 'abstracts/mixins' as mixins;
+
+.portfolio-picture {
+    @include mixins.linearGradient(var.$color__yellow, var.$color__red);
+    border-radius: var.$portfolio-picture__border-radius;
+
+    picture {
+        display: block;
+        border-radius: var.$portfolio-picture__border-radius;
+        overflow: hidden;
+        transform: translate(10px, 10px) scale(0.98);
+        filter: sepia(0.1);
+    }
+}

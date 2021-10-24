@@ -4,6 +4,9 @@
 
 $color__white: #ffffff;
 
+$color__yellow: #e2cc51;
+$color__red: #a73c38;
+
 $color__gray--0: #ececec;
 $color__gray--1: #c0c0c0;
 $color__gray--2: #a1a1a1;
@@ -15,6 +18,12 @@ $color__black--0: #313131;
 $color__black--1: #202020;
 $color__black--2: #131313;
 $color__black--3: #000000;
+
+// -------------------------
+// Gradients
+// -------------------------
+
+$linear-gradient__degree--default: 130deg;
 
 // -------------------------
 // Typography
@@ -70,6 +79,8 @@ $mobile-breakpoint: 768px;
 
 $main-content__max-width: 1280px;
 
-$section__margin: 20px;
+$section__margin: 30px 20px;
 
-$column-gap--base: 20px;
+$column-gap--base: 30px;
+
+$portfolio-picture__border-radius: 100px;
