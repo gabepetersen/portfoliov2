@@ -1,40 +1,10 @@
-@use 'abstracts/variables' as var;
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 1.8rem;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 html {
-    font-size: 62.5%; // 1rem = 10px
-}
-
-body {
-    background-color: var.$color__black--1;
-    color: var.$color__gray--0;
-}
-
-header {
-    text-align: center;
-}
-
-main {
-    max-width: var.$main-content__max-width;
-    margin: 0 auto;
-}
-
-section {
-    margin: var.$section__margin;
-}
-
-p {
-    line-height: var.$line-height--paragraph;
-}
-
-img {
-    width: 100%;
-    height: auto;
+  font-size: 62.5%; // 1rem = 10px
 }

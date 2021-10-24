@@ -1,14 +1,6 @@
 // abstracts
-@use 'abstracts/variables';
-@use 'abstracts/mixins';
+@use 'variables';
 
 // base
 @use 'typography';
 @use 'base';
-
-// components
-@use 'components/navigation';
-@use 'components/portfolio-picture';
-
-// layout
-@use 'layout/two-column';
