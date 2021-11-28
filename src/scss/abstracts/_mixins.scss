@@ -11,3 +11,14 @@
         @content;
     }
 }
+
+// visually hide elements but keep in accessibility tree
+@mixin hideVisually {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
