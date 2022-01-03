@@ -1,13 +1,22 @@
 @use 'abstracts/variables' as var;
 @use 'abstracts/mixins' as mixins;
 
-.nav {
+.nav,
+.footer__nav {
     list-style: none;
     display: flex;
     justify-content: center;
 
     &__link {
         @include mixins.defaultLink;
-        font-size: var.$font__size--nav-link--main;
+
     }
+}
+
+.nav__link {
+    font-size: var.$font__size--nav-link--main;
+}
+
+.footer__nav__link {
+    font-size: var.$font__size--nav-link--footer;
 }
