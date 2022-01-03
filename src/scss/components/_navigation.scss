@@ -6,48 +6,8 @@
     display: flex;
     justify-content: center;
 
-    &__item {
-        position: relative;
-        @include mixins.linearGradient(var.$color__yellow, var.$color__red);
-        background-clip: text;
-
-        &:hover,
-        &:focus {
-            background-image: linear-gradient(90deg, var.$color__black--3 60px, var.$color__yellow 0, var.$color__yellow 100%);
-        }
-    }
-
     &__link {
-        display: inline-block;
-        padding: 1rem 3rem;
-        height: 100%;
-        font-size: var.$font__size--nav-link;
-        font-weight: 400;
-        overflow: hidden;
-        border-radius: 20px;
-
-        &:link,
-        &:visited,
-        &:active {
-            text-decoration: none;
-            color: transparent;
-        }
-
-        &:hover,
-        &:focus {
-            font-weight: 500;
-
-            &::after {
-                content: "";
-                position: absolute;
-                left: 5px;
-                top: 7px;
-                width: 55px;
-                height: 35px;
-                z-index: -1;
-                @include mixins.linearGradient(var.$color__yellow, var.$color__red, 235deg);
-                border-bottom-left-radius: 60%;
-            }
-        }
+        @include mixins.defaultLink;
+        font-size: var.$font__size--nav-link--main;
     }
 }

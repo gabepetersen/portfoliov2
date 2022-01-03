@@ -22,3 +22,37 @@
     overflow: hidden;
     white-space: nowrap;
 }
+
+// default link style
+@mixin defaultLink {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    padding: 15px 15px;
+    text-decoration: none;
+    overflow: hidden;
+
+    &:link,
+    &:visited,
+    &:active {
+        color: var.$color__white;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 200%;
+        height: 4px;
+        bottom: 5px;
+        left: 0;
+        transition: transform .6s ease;
+        transform: translateX(0);
+        @include linearGradient(var.$color__yellow 10%, var.$color__red, 235deg);
+    }
+
+    &:hover::after,
+    &:focus::after {
+        transform: translateX(-50%);
+    }
+}
