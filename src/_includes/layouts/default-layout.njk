@@ -3,19 +3,33 @@ layout: layouts/page.njk
 title: No Title Available
 ---
 
-<header>
-  <h1>
+<header class="header">
+  <h1 class="header__title header__title--hidden">
     {{ title }}
   </h1>
 </header>
-<nav>
+<nav aria-label="Main navigation">
   <ul class="nav">
-      <li class="nav__item"><a href="#" class="nav__link">First</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Second</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Third</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Fourth</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Fifth</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Sixth</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Test Link</a></li>
   </ul>
 </nav>
 {{ content | safe }}
+<footer class="footer">
+    <nav aria-label="Footer navigation">
+      <ul class="footer__nav">
+        <li class="footer__nav__item">
+          <a href="#" class="footer__nav__link">Home</a>
+        </li>
+        <li class="footer__nav__item">
+          <a href="#" class="footer__nav__link">Test Link</a>
+        </li>
+        <li class="footer__nav__item">
+          <a href="#" class="footer__nav__link">Test Link</a>
+        </li>
+        <li class="footer__nav__item">
+          <a href="#" class="footer__nav__link">View this site on Github</a>
+        </li>
+      </ul>
+    </nav>
+</footer>

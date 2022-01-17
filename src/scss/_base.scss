@@ -34,6 +34,10 @@ p {
     line-height: var.$line-height--paragraph;
 }
 
+a {
+    text-decoration: none;
+}
+
 img {
     width: 100%;
     height: auto;
