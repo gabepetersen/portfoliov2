@@ -47,7 +47,7 @@
         bottom: 5px;
         left: 0;
         transition: transform .6s ease;
-        transform: translateX(0);
+        transform: translateX(0) skew(75deg, -1deg);
         @include linearGradient(var.$color__yellow 10%, var.$color__red, 235deg);
     }
 
