@@ -1,6 +1,10 @@
 @use 'abstracts/variables' as var;
 @use 'abstracts/mixins' as mixins;
 
+nav {
+    margin: 20px 0 30px;
+}
+
 .nav,
 .footer__nav {
     list-style: none;

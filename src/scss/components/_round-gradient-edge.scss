@@ -40,14 +40,14 @@
         }
     }
 
-    @media screen and (max-width: $mobile-breakpoint) {
+    @media screen and (max-width: ($mobile-breakpoint - 1)) {
         &--desktop-only {
-            border-radius: 5px;
+            border-radius: 0;
 
             & > *,
             &.round-gradient-edge--top-left > *,
             &.round-gradient-edge--bottom-right > * {
-                border-radius: 5px;
+                border-radius: 0;
                 overflow: visible;
                 transform: none;
             }
