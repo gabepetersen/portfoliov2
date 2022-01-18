@@ -1,9 +1,21 @@
 @use 'abstracts/variables' as *;
+@use 'abstracts/mixins';
 
-.text__bubble {
-    padding: 50px;
-    background-color: $color__black--2;
-    color: $color__white;
-    border-top-left-radius: 5px;
-    font-size: 2.0rem;
+.text {
+    &__container--main {
+        p {
+            padding: 50px;
+            margin: 5px;
+            background-color: $color__black--2;
+            color: $color__white;
+            font-size: 2.0rem;
+            border-top-left-radius: 5px;
+        }
+    }
+
+    @include mixins.desktopStyles {
+        &__container--main p {
+            margin: 0;
+        }
+    }
 }
