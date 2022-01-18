@@ -1,22 +1,22 @@
-@use 'abstracts/variables' as var;
+@use 'abstracts/variables' as *;
 @use 'abstracts/mixins' as mixins;
 
 .round-gradient-edge {
-    @include mixins.linearGradient(var.$color__yellow, var.$color__red);
-    border-radius: var.$round-gradient-edge__border-radius;
+    @include mixins.linearGradient($color__yellow, $color__red);
+    border-radius: $round-gradient-edge__border-radius;
 
     > * {
         display: block;
-        border-radius: var.$round-gradient-edge__border-radius;
+        border-radius: $round-gradient-edge__border-radius;
         overflow: hidden;
         transform: scale(0.98);
     }
 
     &--small {
-        border-radius: var.$round-gradient-edge__border-radius--small;
+        border-radius: $round-gradient-edge__border-radius--small;
 
         > * {
-            border-radius: var.$round-gradient-edge__border-radius--small;
+            border-radius: $round-gradient-edge__border-radius--small;
         }
     }
 
@@ -37,6 +37,20 @@
 
         &.round-gradient-edge--small > * {
             transform: translate(-5px, -5px) scale(0.98);
+        }
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        &--desktop-only {
+            border-radius: 5px;
+
+            & > *,
+            &.round-gradient-edge--top-left > *,
+            &.round-gradient-edge--bottom-right > * {
+                border-radius: 5px;
+                overflow: visible;
+                transform: none;
+            }
         }
     }
 }
