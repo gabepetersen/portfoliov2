@@ -1,0 +1,17 @@
+
+
+name: Primary Linter
+on:
+  pull_request
+
+jobs:
+  stylelint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out PR \# ${{ github.event.pull_request.number }}
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Run stylelint with reviewdog
+        uses: reviewdog/action-stylelint@v1.11.0
+      - run: echo " 💼 Stylelint Status: ${{ job.status }}."
