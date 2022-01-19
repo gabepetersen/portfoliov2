@@ -5,6 +5,7 @@
         "indentation": [
             4
         ],
+        "no-descending-specificity": null,
         "color-hex-case": "upper",
         "selector-class-pattern": null,
         "scss/at-mixin-pattern": null,
