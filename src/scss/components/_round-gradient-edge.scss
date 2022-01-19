@@ -10,26 +10,26 @@
         display: block;
         border-radius: $round-gradient-edge__border-radius;
         overflow: hidden;
-        transform: scale(0.98);
+        transform: scale(.98);
     }
 
     &--top-left {
         > * {
-            transform: translate(10px, 10px) scale(0.98);
+            transform: translate(10px, 10px) scale(.98);
         }
 
         &.round-gradient-edge--small > * {
-            transform: translate(-5px, -5px) scale(0.98);
+            transform: translate(-5px, -5px) scale(.98);
         }
     }
 
     &--bottom-right {
         > * {
-            transform: translate(-10px, -10px) scale(0.98);
+            transform: translate(-10px, -10px) scale(.98);
         }
 
         &.round-gradient-edge--small > * {
-            transform: translate(-5px, -5px) scale(0.98);
+            transform: translate(-5px, -5px) scale(.98);
         }
     }
 

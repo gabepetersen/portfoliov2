@@ -7,13 +7,13 @@ $color__forest-green: #1C3A13;
 $color__selective-yellow: #F7B801;
 $color__cg-red: #DB3A34;
 $color__outrageous-orange: #FC7753;
-$color__white: #f0f0f0;
+$color__white: #F0F0F0;
 
-$color__gray--0: #ececec;
-$color__gray--1: #c0c0c0;
-$color__gray--2: #a1a1a1;
+$color__gray--0: #F5D2D2;
+$color__gray--1: #C0C0C0;
+$color__gray--2: #A1A1A1;
 $color__gray--3: #808080;
-$color__gray--4: #6b6b6b;
+$color__gray--4: #6B6B6B;
 $color__gray--5: #464646;
 
 $color__black--0: #313131;
@@ -47,48 +47,48 @@ $heading--primary__color: $color__black--2;
 $heading--secondary__color: $color__gray--1;
 
 $headings: (
-  h6: (
-    font-size-ratio: 1.4,
-    font-weight: 300,
-    font-family: 'Arial, sans-serif',
-    text-transform: none,
-    margin: 10px 0
-  ),
-  h5: (
-    font-size-ratio: 1.6,
-    font-weight: 300,
-    font-family: 'Arial, sans-serif',
-    text-transform: none,
-    margin: 10px 0
-  ),
-  h4: (
-    font-size-ratio: 1.8,
-    font-weight: 300,
-    font-family: 'Arial, sans-serif',
-    text-transform: none,
-    margin: 10px 0
-  ),
-  h3: (
-    font-size-ratio: 2.1,
-    font-weight: 300,
-    font-family: 'Arial, sans-serif',
-    text-transform: none,
-    margin: 15px 0
-  ),
-  h2: (
-    font-size-ratio: 2.6,
-    font-weight: 300,
-    font-family: 'Arial, sans-serif',
-    text-transform: none,
-    margin: 20px 0
-  ),
-  h1: (
-    font-size-ratio: 3.1,
-    font-weight: 300,
-    font-family: 'Arial, sans-serif',
-    text-transform: none,
-    margin: 25px 0
-  )
+    h6: (
+        font-size-ratio: 1.4,
+        font-weight: 300,
+        font-family: 'Arial, sans-serif',
+        text-transform: none,
+        margin: 10px 0
+    ),
+    h5: (
+        font-size-ratio: 1.6,
+        font-weight: 300,
+        font-family: 'Arial, sans-serif',
+        text-transform: none,
+        margin: 10px 0
+    ),
+    h4: (
+        font-size-ratio: 1.8,
+        font-weight: 300,
+        font-family: 'Arial, sans-serif',
+        text-transform: none,
+        margin: 10px 0
+    ),
+    h3: (
+        font-size-ratio: 2.1,
+        font-weight: 300,
+        font-family: 'Arial, sans-serif',
+        text-transform: none,
+        margin: 15px 0
+    ),
+    h2: (
+        font-size-ratio: 2.6,
+        font-weight: 300,
+        font-family: 'Arial, sans-serif',
+        text-transform: none,
+        margin: 20px 0
+    ),
+    h1: (
+        font-size-ratio: 3.1,
+        font-weight: 300,
+        font-family: 'Arial, sans-serif',
+        text-transform: none,
+        margin: 25px 0
+    )
 );
 
 // -------------------------
