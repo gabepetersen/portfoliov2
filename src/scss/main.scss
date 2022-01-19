@@ -4,3 +4,11 @@
 // base
 @use 'typography';
 @use 'base';
+
+// components
+@use 'components/navigation';
+@use 'components/portfolio-picture';
+
+// layout
+@use 'layout/header';
+@use 'layout/two-column';
