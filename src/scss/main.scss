@@ -1,5 +1,6 @@
 // abstracts
-@use 'variables';
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
 
 // base
 @use 'typography';
