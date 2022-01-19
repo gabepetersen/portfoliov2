@@ -67,3 +67,18 @@ $headings: (
     text-transform: none
   )
 );
+
+// -------------------------
+// Layout
+// -------------------------
+
+$mobile-breakpoint: 768px;
+
+$main-content__max-width: 1280px;
+
+$section__margin: 30px 20px;
+
+$column-gap--base: 30px;
+
+$round-gradient-edge__border-radius: 100px;
+$round-gradient-edge__border-radius--small: 100px;
