@@ -1,0 +1,22 @@
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins';
+
+.text {
+    &__container--main {
+        p {
+            // I have no idea why this looks better but it just does
+            padding: 15px 30px 15px 40px;
+            background-color: $color__black--1;
+            color: $color__white;
+            font-size: 2rem;
+            border-top-left-radius: 5px;
+        }
+    }
+
+    @include mixins.desktopStyles {
+        &__container--main p {
+            background-color: $color__black--2;
+            padding: 50px;
+        }
+    }
+}

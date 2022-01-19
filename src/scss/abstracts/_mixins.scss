@@ -1,12 +1,12 @@
-@use 'abstracts/variables' as var;
+@use 'abstracts/variables' as *;
 
 // Example Usage: @include linearGradient(#fff, #000, 145deg);
-@mixin linearGradient($color1, $color2, $deg: var.$linear-gradient__degree--default) {
+@mixin linearGradient($color1, $color2, $deg: $linear-gradient__degree--default) {
     background-image: linear-gradient($deg, $color1, $color2);
 }
 
 // Example Usage: @include desktopStyles { (styles here) }
-@mixin desktopStyles($breakpoint: var.$mobile-breakpoint) {
+@mixin desktopStyles($breakpoint: $mobile-breakpoint) {
     @media screen and (min-width: $breakpoint) {
         @content;
     }
@@ -35,7 +35,7 @@
     &:link,
     &:visited,
     &:active {
-        color: var.$color__white;
+        color: $color__white;
     }
 
     &::after {
@@ -48,7 +48,8 @@
         left: 0;
         transition: transform .6s ease;
         transform: translateX(0) skew(75deg, -1deg);
-        @include linearGradient(var.$color__yellow 10%, var.$color__red, 235deg);
+
+        @include linearGradient($color__accent--1 5%, $color__accent--2);
     }
 
     &:hover::after,
