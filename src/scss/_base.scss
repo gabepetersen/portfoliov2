@@ -1,3 +1,6 @@
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins';
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,8 +13,8 @@ html {
 }
 
 body {
-    background-color: var.$color__black--1;
-    color: var.$color__gray--0;
+    background-color: $color__black--1;
+    color: $color__gray--0;
 }
 
 header {
@@ -19,16 +22,20 @@ header {
 }
 
 main {
-    max-width: var.$main-content__max-width;
+    max-width: $main-content__max-width;
     margin: 0 auto;
 }
 
 section {
-    margin: var.$section__margin;
+    margin: $section__margin;
+
+    @include mixins.desktopStyles {
+        margin: $section__margin--desktop;
+    }
 }
 
 p {
-    line-height: var.$line-height--paragraph;
+    line-height: $line-height--paragraph;
 }
 
 a {
