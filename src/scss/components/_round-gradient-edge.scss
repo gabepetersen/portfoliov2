@@ -2,7 +2,7 @@
 @use 'abstracts/mixins' as mixins;
 
 .round-gradient-edge {
-    @include mixins.linearGradient($color__yellow, $color__red);
+    @include mixins.linearGradient($color__accent--2, $color__accent--1);
     border-radius: $round-gradient-edge__border-radius;
 
     > * {

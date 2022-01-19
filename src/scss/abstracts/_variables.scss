@@ -2,10 +2,12 @@
 // Colors
 // -------------------------
 
+$color__dark-sienna: #481D24;
+$color__forest-green: #1C3A13;
+$color__selective-yellow: #F7B801;
+$color__cg-red: #DB3A34;
+$color__outrageous-orange: #FC7753;
 $color__white: #f0f0f0;
-
-$color__yellow: #e2cc51;
-$color__red: #a73c38;
 
 $color__gray--0: #ececec;
 $color__gray--1: #c0c0c0;
@@ -18,6 +20,12 @@ $color__black--0: #313131;
 $color__black--1: #202020;
 $color__black--2: #131313;
 $color__black--3: #000000;
+
+$color__accent--1: $color__outrageous-orange;
+$color__accent--2: $color__selective-yellow;
+$color__accent--3: $color__forest-green;
+$color__accent--4: $color__cg-red;
+$color__accent--5: $color__dark-sienna;
 
 // -------------------------
 // Gradients
