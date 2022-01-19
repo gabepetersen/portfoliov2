@@ -48,6 +48,7 @@
         left: 0;
         transition: transform .6s ease;
         transform: translateX(0) skew(75deg, -1deg);
+
         @include linearGradient($color__accent--1 5%, $color__accent--2);
     }
 
