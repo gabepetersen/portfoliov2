@@ -1,0 +1,5 @@
+@use 'abstracts/mixins' as mixins;
+
+.header__title--hidden {
+    @include mixins.hideVisually;
+}

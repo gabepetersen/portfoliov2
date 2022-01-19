@@ -1,10 +1,49 @@
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins';
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1.8rem;
 }
 
 html {
-  font-size: 62.5%; // 1rem = 10px
+    font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+    background-color: $color__black--1;
+    color: $color__gray--0;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    max-width: $main-content__max-width;
+    margin: 0 auto;
+}
+
+section {
+    margin: $section__margin;
+
+    @include mixins.desktopStyles {
+        margin: $section__margin--desktop;
+    }
+}
+
+p {
+    line-height: $line-height--paragraph;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }

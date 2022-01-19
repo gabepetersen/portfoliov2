@@ -1,6 +1,16 @@
 // abstracts
-@use 'variables';
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
 
 // base
 @use 'typography';
 @use 'base';
+
+// components
+@use 'components/navigation';
+@use 'components/round-gradient-edge';
+@use 'components/text';
+
+// layout
+@use 'layout/header';
+@use 'layout/two-column';

@@ -1,10 +1,25 @@
-.nav {
-  list-style: none;
-  display: flex;
-  justify-content: center;
+@use 'abstracts/variables' as var;
+@use 'abstracts/mixins' as mixins;
 
+nav {
+    margin: 20px 0 30px;
+}
 
-  &__item {
+.nav,
+.footer__nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
 
-  }
+    &__link {
+        @include mixins.defaultLink;
+    }
+}
+
+.nav__link {
+    font-size: var.$font__size--nav-link--main;
+}
+
+.footer__nav__link {
+    font-size: var.$font__size--nav-link--footer;
 }

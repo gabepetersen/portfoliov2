@@ -1,0 +1,57 @@
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as mixins;
+
+.round-gradient-edge {
+    border-radius: $round-gradient-edge__border-radius;
+
+    @include mixins.linearGradient($color__accent--2, $color__accent--1);
+
+    > * {
+        display: block;
+        border-radius: $round-gradient-edge__border-radius;
+        overflow: hidden;
+        transform: scale(.98);
+    }
+
+    &--top-left {
+        > * {
+            transform: translate(10px, 10px) scale(.98);
+        }
+
+        &.round-gradient-edge--small > * {
+            transform: translate(-5px, -5px) scale(.98);
+        }
+    }
+
+    &--bottom-right {
+        > * {
+            transform: translate(-10px, -10px) scale(.98);
+        }
+
+        &.round-gradient-edge--small > * {
+            transform: translate(-5px, -5px) scale(.98);
+        }
+    }
+
+    &--small {
+        > * {
+            border-radius: $round-gradient-edge__border-radius--small;
+        }
+
+        border-radius: $round-gradient-edge__border-radius--small;
+    }
+
+    @media screen and (max-width: ($mobile-breakpoint - 1)) {
+        &--desktop-only {
+            border-radius: 0;
+
+            & > *,
+            &.round-gradient-edge--top-left > *,
+            &.round-gradient-edge--bottom-right > * {
+                border-radius: 0;
+                overflow: visible;
+                transform: none;
+            }
+        }
+    }
+}
