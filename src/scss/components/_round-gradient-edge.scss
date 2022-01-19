@@ -2,22 +2,15 @@
 @use 'abstracts/mixins' as mixins;
 
 .round-gradient-edge {
-    @include mixins.linearGradient($color__accent--2, $color__accent--1);
     border-radius: $round-gradient-edge__border-radius;
+
+    @include mixins.linearGradient($color__accent--2, $color__accent--1);
 
     > * {
         display: block;
         border-radius: $round-gradient-edge__border-radius;
         overflow: hidden;
         transform: scale(0.98);
-    }
-
-    &--small {
-        border-radius: $round-gradient-edge__border-radius--small;
-
-        > * {
-            border-radius: $round-gradient-edge__border-radius--small;
-        }
     }
 
     &--top-left {
@@ -40,6 +33,14 @@
         }
     }
 
+    &--small {
+        > * {
+            border-radius: $round-gradient-edge__border-radius--small;
+        }
+
+        border-radius: $round-gradient-edge__border-radius--small;
+    }
+
     @media screen and (max-width: ($mobile-breakpoint - 1)) {
         &--desktop-only {
             border-radius: 0;
@@ -54,5 +55,3 @@
         }
     }
 }
-
-
