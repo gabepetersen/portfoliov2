@@ -8,5 +8,7 @@ This site is built with [11ty](https://www.11ty.dev/) in hopes of learning more 
 
 ### To Run
 
-1. `yarn start`
-2. Navigate to `http://localhost:8080`
+1. `npm i -g yarn` (if not already)
+2. `yarn`
+3. `yarn start`
+4. Navigate to `http://localhost:8080`
